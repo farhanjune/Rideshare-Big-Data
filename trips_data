@@ -1,0 +1,5 @@
+CREATE EXTERNAL TABLE IF NOT EXISTS trips_data(trip_id string,trip_start string,trip_end string,trip_seconds int,trip_miles double,pct string,dct string,dca string,fare string,tip string, add_charges string, trip_total string,sta string,trip_pool string,pickup_latitude string,pickup_longitude string,pcl string,dropoff_latitude string,dropoff_longitude string,dcl string)
+> ROW FORMAT DELIMITED
+> FIELDS TERMINATED BY ','
+> STORED AS TEXTFILE
+> LOCATION 'user/data/fact';
